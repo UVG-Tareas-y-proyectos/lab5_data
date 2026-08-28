@@ -86,7 +86,7 @@ def export_eda(data: pd.DataFrame, output_dir: str | Path) -> dict[str, Path]:
         ],
         padding=4,
     )
-    ax.set_title("Distribucion de la variable objetivo")
+    ax.set_title("Distribución de la variable objetivo")
     ax.set_ylabel("Cantidad de tweets")
     ax.set_ylim(0, distribution["cantidad"].max() * 1.18)
     ax.spines[["top", "right"]].set_visible(False)
@@ -104,7 +104,7 @@ def export_eda(data: pd.DataFrame, output_dir: str | Path) -> dict[str, Path]:
             label=CLASS_NAMES[target],
             color=COLORS[target],
         )
-    ax.set_title("Longitud de los tweets por categoria")
+    ax.set_title("Longitud de los tweets por categoría")
     ax.set_xlabel("Cantidad de palabras antes de la limpieza")
     ax.set_ylabel("Cantidad de tweets")
     ax.legend()
@@ -120,4 +120,3 @@ def export_eda(data: pd.DataFrame, output_dir: str | Path) -> dict[str, Path]:
         "class_figure": class_figure,
         "length_figure": length_figure,
     }
-
