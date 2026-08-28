@@ -1,0 +1,4 @@
+pandas>=3.0,<4
+scikit-learn>=1.9,<2
+matplotlib>=3.11,<4
+

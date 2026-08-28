@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# El dataset se obtiene con scripts/download_data.py.
+data/*.csv
+
+# Archivos temporales de inspeccion del enunciado.
+tmp/
+
