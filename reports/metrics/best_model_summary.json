@@ -1,0 +1,9 @@
+{
+  "modelo": "SVM Lineal (LinearSVC)",
+  "features": "Solo Texto (TF-IDF)",
+  "f1": 0.7603833865814696,
+  "precision": 0.7959866220735786,
+  "recall": 0.72782874617737,
+  "accuracy": 0.8028909329829172,
+  "roc_auc": 0.8526032638565932
+}

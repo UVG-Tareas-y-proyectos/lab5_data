@@ -11,7 +11,7 @@ import pandas as pd
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_DESTINATION = PROJECT_ROOT / "data" / "train.csv"
+DEFAULT_DESTINATION = PROJECT_ROOT / "data" / "raw" / "train.csv"
 
 # Copia publica del archivo original de la competencia. La fuente oficial de
 # Kaggle requiere autenticacion y aceptacion previa de sus reglas.
@@ -82,7 +82,7 @@ def parse_args() -> argparse.Namespace:
         "--destination",
         type=Path,
         default=DEFAULT_DESTINATION,
-        help="Ruta de salida (por defecto: data/train.csv).",
+        help="Ruta de salida (por defecto: data/raw/train.csv).",
     )
     parser.add_argument(
         "--force",
@@ -95,4 +95,3 @@ def parse_args() -> argparse.Namespace:
 if __name__ == "__main__":
     arguments = parse_args()
     download(arguments.destination.resolve(), arguments.force)
-
